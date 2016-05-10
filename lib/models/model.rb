@@ -1,3 +1,11 @@
+require 'dm-core'
+require 'dm-sqlite-adapter'
+require 'dm-migrations'
+require 'dm-serializer'
+require 'dm-timestamps'
+require 'dm-transactions'
+require 'dm-types'
+require 'dm-validations'
 
 class User
   include DataMapper::Resource
@@ -15,5 +23,3 @@ class User
     end
   end
 end
-
-
