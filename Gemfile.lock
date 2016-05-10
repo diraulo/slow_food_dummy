@@ -163,6 +163,7 @@ DEPENDENCIES
   dm-transactions (= 1.2.0)
   dm-types (= 1.2.2)
   dm-validations (= 1.2.0)
+  do_postgres
   dotenv
   launchy
   pg
