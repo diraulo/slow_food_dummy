@@ -13,4 +13,5 @@ class Restaurant
   property :id, Serial, key: true
   property :name, String, length: 128
 
+  belongs_to :user
 end
