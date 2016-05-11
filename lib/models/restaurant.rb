@@ -14,5 +14,4 @@ class Restaurant
   property :name, String, length: 128
 
   belongs_to :user
-
 end
