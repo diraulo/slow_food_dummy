@@ -16,6 +16,7 @@ class User
 
   has 1, :restaurant
 
+
   def authenticate(attempted_password)
     if self.password == attempted_password
       true
