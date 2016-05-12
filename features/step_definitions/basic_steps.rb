@@ -20,22 +20,22 @@ Given(/^a User exists$/) do
   user.save
 end
 
-Given(/^I am on the "([^"]*)" page$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Given(/^I am on the "([^"]*)" page$/) do |page|
+  visit '/auth/login'
 end
 
-Then(/^I fill in "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^I fill in "([^"]*)" with "([^"]*)"$/) do |field, value|
+  fill_in field, with: value
 end
 
-Then(/^I click on "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^I click on "([^"]*)"$/) do |link|
+  click_link_or_button link
 end
 
-Then(/^I should be on the "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^I should be on the home page$/) do
+  expect(current_path).to eq '/'
 end
 
-Then(/^I should see "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^I should see "([^"]*)"$/) do |text|
+  expect(page).to have_text 'Successfully logged in'
 end
