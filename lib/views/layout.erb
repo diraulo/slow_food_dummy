@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Sinatra Warden</title>
+</head>
 <body>
-<title>Sinatra Warden</title>
 
 <h1>User authentication</h1>
 
-<p>
+
   <% if current_user %>
-    Logged in as <%= current_user.username %>
+    <p>Logged in as <%= current_user.username %>
     <a href="/auth/logout">Log Out</a></p>
   <% else %>
 
