@@ -4,6 +4,7 @@ os:
 before_install:
   - brew update
 install:
+  - brew unlink postgresql
   - brew install postgresql
 rvm:
  - 2.2.3
