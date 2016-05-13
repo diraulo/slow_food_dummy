@@ -8,6 +8,6 @@ end
 
 Given(/^that the following dishes exist in the system$/) do |table|
   table.hashes.each do |dish|
-    Dish.crete(name: dish[:name], price: dish[:price])
+    Dish.create(name: dish[:name], price: dish[:price])
   end
 end
