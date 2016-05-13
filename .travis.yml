@@ -1,6 +1,4 @@
 language: ruby
-before_install:
-  - brew update
 install:
   - brew install postgresql
 rvm:
