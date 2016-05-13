@@ -1,4 +1,8 @@
 language: ruby
 rvm:
   - 2.2.3
+services:
+  - postgresql
+before_script:
+  - psql -c 'create database slowfood_v1_test;' -U postgres
 script: bundle exec rspec
