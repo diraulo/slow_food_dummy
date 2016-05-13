@@ -7,6 +7,7 @@ gem 'bcrypt-ruby', '3.0.1'
 gem 'sinatra_warden'
 gem 'warden', '1.2.6'
 gem 'shotgun', '0.9.1'
+gem 'coveralls', require: false
 
 gem 'data_mapper'
 gem 'pg'
@@ -32,5 +33,4 @@ group :development, :test do
   gem 'dm-rspec'
   gem 'database_cleaner'
   gem 'launchy'
-  gem 'coveralls', require: false
 end
