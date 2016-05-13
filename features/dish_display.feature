@@ -15,4 +15,10 @@ I would like a list of disches to be displayed on a page
 
   Scenario: Display Dishes on index page
     Given I am on the home page
-    Then I should see a list of dishes
+    Then I should see "Sushi"
+    And I should see "Ushi"
+
+  Scenario: Display 'No dishes message' if no dishes has been created
+    Given there are no dishes in the system
+    And I am on the home page
+    Then I will see "No dishes available"
