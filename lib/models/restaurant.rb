@@ -7,20 +7,11 @@ require 'dm-transactions'
 require 'dm-types'
 require 'dm-validations'
 
-class User
+class Restaurant
   include DataMapper::Resource
 
   property :id, Serial, key: true
-  property :username, String, length: 128
-  property :password, BCryptHash
+  property :name, String, length: 128
 
-  has 1, :restaurant
-
-  def authenticate(attempted_password)
-    if self.password == attempted_password
-      true
-    else
-      false
-    end
-  end
+  belongs_to :user
 end

@@ -1,0 +1,7 @@
+<% if @dishes.empty? %>
+  <p>No dishes available</p>
+<% else %>
+  <% @dishes.each do |dish| %>
+    <h3><%= dish[:name] %></h3>
+  <% end %>
+<% end %>
