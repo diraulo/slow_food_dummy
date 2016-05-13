@@ -37,5 +37,5 @@ Then(/^I should be on the home page$/) do
 end
 
 Then(/^I should see "([^"]*)"$/) do |text|
-  expect(page).to have_text 'Successfully logged in'
+  expect(page).to have_text text
 end

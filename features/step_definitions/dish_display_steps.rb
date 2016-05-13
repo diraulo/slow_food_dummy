@@ -9,7 +9,7 @@ Given(/^I am on the home page$/) do
 end
 
 Then(/^I will see "([^"]*)"$/) do |text|
-  expect(page).to have_text "No dishes available"
+  expect(page).to have_text text
 end
 
 Given(/^there are no dishes in the system$/) do
