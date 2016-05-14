@@ -3,6 +3,9 @@ notifications:
   email: false
 rvm:
   - 2.2.3
+cache:
+  - bundler
+  - apt
 addons:
   postgresql: "9.4"
 before_install:
